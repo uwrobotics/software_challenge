@@ -1,0 +1,9 @@
+<launch>
+
+<node name="turtlelaunch" pkg="turtlesim" type="turtlesim_node" output="screen" >
+<param name="~background_b" value="0" />
+<param name="~background_r" value="100" />
+<param name="~background_g" value="0" />
+</node>
+
+</launch>
