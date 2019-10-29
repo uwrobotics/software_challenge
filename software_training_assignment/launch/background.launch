@@ -1,0 +1,11 @@
+<launch>
+<!--<rosparam command="load" file="$(find software_training_assignment)/config/background_param.yaml" />-->
+<group ns="/">
+<node pkg="turtlesim" name="sim" type="turtlesim_node" >
+	<param name="~background_b" value="0" />
+<!--<rosparam command="delete" param="/background_r"/>
+<rosparam command="delete" param="/background_g"/>
+<rosparam command="delete" param="/background_b"/>-->
+</node>
+</group>
+</launch>
