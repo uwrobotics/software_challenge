@@ -1,0 +1,5 @@
+<launch>
+<node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+<node pkg="software_training_assignment" type="software_training_assignment_node" name="software_training_assignment_node" output="screen">
+</node>
+</launch>
