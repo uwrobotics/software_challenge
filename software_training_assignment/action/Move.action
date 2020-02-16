@@ -1,0 +1,8 @@
+# goal definition
+float64[] endLocation
+---
+# result definition
+float64 time
+---
+# feedback
+float64 distance
