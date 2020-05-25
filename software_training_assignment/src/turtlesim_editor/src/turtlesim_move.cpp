@@ -11,22 +11,18 @@ class turtlesimAction
 protected:
   ros::NodeHandle nh_;
   actionlib::SimpleActionServer<turtlesim_editor::turtlesimAction> as_;
-  ros::Time starttime = ros::Time::now();
+  ros::Time starttime;
   turtlesim_editor::turtlesimFeedback feedback_;
   turtlesim_editor::turtlesimResult result_;
 
 public:
-  turtlesimAction(std::string name) :
-    as_(nh_, name, boost::bind(&turtlesimAction::turtlesimGoalConstPtr, this, _1), false) 
+  turtlesimAction(std::string name): starttime(ros::Time::now()), 
+  as_(nh_, name, boost::bind(&turtlesimAction::turtlesimMoveAction, this, _1), false)
   {
     as_.start();
   }
 
-  ~turtlesimAction(void)
-  {
-  }
-
-  void turtlesimGoalConstPtr(const turtlesim_editor::turtlesimGoalConstPtr &goal)
+  void turtlesimMoveAction(const turtlesim_editor::turtlesimGoalConstPtr &goal)
   {
     ros::Rate r(1);
     bool success = true;
@@ -42,16 +38,13 @@ public:
         diffX = abs(moving.x - goal->x);
         moveDistance.linear.x = diffX;
         moveDistance.linear.y = diffY;
+        feedback_.distance = sqrt(pow(diffX, 2) + pow(diffY, 2));
         ros::Publisher moveTurtle =  this->nh_.advertise<geometry_msgs::Twist>("moving_turtle/cmd_vel", 1000);
         moveTurtle.publish(moveDistance);
         this->as_.publishFeedback(feedback_);
     }
-
-    if(success)
-    {
-      result_.timeTaken = ros::Time::now() - this->starttime;
-      as_.setSucceeded(result_);
-    }
+    result_.timeTaken = ros::Time::now() - this->starttime;
+    as_.setSucceeded(result_);
   }
 
 
