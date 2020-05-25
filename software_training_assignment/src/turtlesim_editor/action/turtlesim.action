@@ -1,0 +1,9 @@
+#goal definition
+float32 x
+float32 y
+---
+#result definition
+duration timeTaken
+---
+#feedback
+float32 distance
