@@ -99,7 +99,8 @@ void execute(const software_training_assignment::TurtleSeekerGoalConstPtr& goal,
   	float vecX = movX - goal->x; 	//Calculate x component of vector
 	float vecY = movY - goal->y;	//Calculate y componenet of vector
 	float t = 5;			//Time it will take to execute linear velocity command (choice was arbritary)
-
+	bool done = true;		//Checks if task was done successfully (not preempted, roscore not shutdown)
+	
 	//2.
 	float distanceVec = findVectorMagnitude(vecX, vecY);	//Find magnitude of distance vector
 	float linV = distanceVec / t;				//Calculate required linear velocity
@@ -115,6 +116,10 @@ void execute(const software_training_assignment::TurtleSeekerGoalConstPtr& goal,
 	
 	//4.
 	for(int i=0; i<t; i++){
+		if(as->isPreemptRequested() || !ros::ok()){
+		 	as->setPreempted();
+			done = false;
+		}
 		msg.linear.x = linV;				//Set linear velocity of message
 		turtle_seeker_pub.publish(msg);			//Publish message	
 		feedback.d = findVectorMagnitude((movX - goal->x), (movY - goal->y));	//Set feedback to vector magnitude
@@ -124,7 +129,9 @@ void execute(const software_training_assignment::TurtleSeekerGoalConstPtr& goal,
 	result.time = 1.0 + t;					/*Set result time to total time taken by 
 								  adding time taken by linear and angular commands
 								*/
-	as->setSucceeded(result);				//Set Success
+	if(done){
+		as->setSucceeded(result);				//Set Success
+	}
 }
 
 
@@ -196,7 +203,7 @@ bool resetMovingTurtle(software_training_assignment::ResetTurtle::Request &req, 
 	std_srvs::Empty srv;	//Init service class
 	
  
-	if(teleportTurtle("/moving_turtle", 10, 10, 0)){
+	if(teleportTurtle("/moving_turtle", 25, 10, 0)){
 		ROS_INFO("Succesful Call");
 		ros::service::call("/clear",srv);
 		res.success=true;
@@ -236,7 +243,7 @@ int main(int argc, char **argv){
 		success = killTurtle("turtle1");	//Attempt to kill turtle1
 	}
 	success = spawnTurtle("stationary_turtle", 5.0, 5.0, 0.0); 	//Spawn stationary_turtle
-	success = spawnTurtle("moving_turtle",4,3,0.0);			//Spawn moving_turtle
+	success = spawnTurtle("moving_turtle",25,10,0.0);			//Spawn moving_turtle
 	
 	//ActionServer
 	Server server(n, "turtle_seek", boost::bind(&execute, _1, &server), false);	//Instantiate ActionServer
