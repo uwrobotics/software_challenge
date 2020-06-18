@@ -1,0 +1,10 @@
+#goal definition
+float32 x
+float32 y
+---
+#result definition
+float32 time
+---
+#feedback
+float32 d
+
