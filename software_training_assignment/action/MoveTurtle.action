@@ -1,0 +1,6 @@
+int64 x_target
+int64 y_target
+---
+float64 time_to_target
+---
+float64 distance_to_target
