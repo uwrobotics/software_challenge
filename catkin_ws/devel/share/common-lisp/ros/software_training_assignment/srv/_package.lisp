@@ -1,0 +1,10 @@
+(cl:defpackage software_training_assignment-srv
+  (:use )
+  (:export
+   "RESETMOVINGTURTLE"
+   "<RESETMOVINGTURTLE-REQUEST>"
+   "RESETMOVINGTURTLE-REQUEST"
+   "<RESETMOVINGTURTLE-RESPONSE>"
+   "RESETMOVINGTURTLE-RESPONSE"
+  ))
+

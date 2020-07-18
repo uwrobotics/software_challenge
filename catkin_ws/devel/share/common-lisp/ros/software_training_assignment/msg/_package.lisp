@@ -1,0 +1,21 @@
+(cl:defpackage software_training_assignment-msg
+  (:use )
+  (:export
+   "<DISTANCE>"
+   "DISTANCE"
+   "<MOVEACTION>"
+   "MOVEACTION"
+   "<MOVEACTIONFEEDBACK>"
+   "MOVEACTIONFEEDBACK"
+   "<MOVEACTIONGOAL>"
+   "MOVEACTIONGOAL"
+   "<MOVEACTIONRESULT>"
+   "MOVEACTIONRESULT"
+   "<MOVEFEEDBACK>"
+   "MOVEFEEDBACK"
+   "<MOVEGOAL>"
+   "MOVEGOAL"
+   "<MOVERESULT>"
+   "MOVERESULT"
+  ))
+

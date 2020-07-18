@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/joshua/software_challenge/catkin_ws/devel/setup.sh
