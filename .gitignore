@@ -2,4 +2,4 @@ catkin_ws/build
 catkin_ws/devel
 *.catkin_workspace
 catkin_ws
-!catkin_workspace/src/software_training_assignment
+!catkin_workspace/src/
