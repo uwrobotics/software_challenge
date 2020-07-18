@@ -1,0 +1,18 @@
+<launch>
+    <node
+        name="startTurtleNode"
+        pkg="turtlesim"
+        type="turtlesim_node"
+    >
+        <param name="background_b" value="0"/>
+        <param name="background_g" value="128"/>
+        <param name="background_r" value="128"/>
+    </node>
+    <node
+        name="turtleNodeControl"
+        pkg="software_training_assignment"
+        type="turtleBehaviour"
+        output="screen"
+    >
+    </node>
+</launch>

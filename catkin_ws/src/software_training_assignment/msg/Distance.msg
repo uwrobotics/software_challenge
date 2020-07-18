@@ -1,0 +1,3 @@
+uint32 xDistance
+uint32 yDistance
+uint32 distance
