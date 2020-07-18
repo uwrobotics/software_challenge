@@ -1,8 +1,0 @@
-#goal definition
-float32[] absolutePos
----
-#result definition
-duration time
----
-#feedback
-float32 distance
