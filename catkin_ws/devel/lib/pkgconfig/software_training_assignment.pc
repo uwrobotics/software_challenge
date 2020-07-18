@@ -1,8 +1,0 @@
-prefix=/home/joshua/software_challenge/catkin_ws/devel
-
-Name: software_training_assignment
-Description: Description of software_training_assignment
-Version: 0.0.0
-Cflags: -I/home/joshua/software_challenge/catkin_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: actionlib_msgs
