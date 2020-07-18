@@ -17,5 +17,5 @@ catkin_ws
 
 !software_training_assignment
 software_training_assignment/*
-!software_training_assignment/srv
+!software_training_assignment/src
 !software_training_assignment/CMakeLists.txt
