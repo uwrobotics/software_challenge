@@ -1,0 +1,21 @@
+# !catkin_ws/
+
+# catkin_ws/*
+# !catkin_ws/src
+
+# catkin_ws/src/*
+# !catkin_ws/src/software_training_assignment
+
+# catkin_ws/src/software_training_assignment/*
+# !catkin_ws/src/software_training_assignment/src
+# !catkin_ws/src/software_training_assignment/CMakeLists.txt
+
+
+README.md
+
+catkin_ws
+
+!software_training_assignment
+software_training_assignment/*
+!software_training_assignment/src
+!software_training_assignment/CMakeLists.txt
