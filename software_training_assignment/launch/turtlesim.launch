@@ -1,0 +1,11 @@
+<launch>
+
+    <group ns="turtlesim1">
+        <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node" >
+            <param name="background_b" value="0" type="int" />
+            <param name="background_r" value="128" type="int" />
+            <param name="background_g" value="128" type="int" />
+        </node> 
+    </group>
+
+</launch>

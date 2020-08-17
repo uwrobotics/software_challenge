@@ -1,0 +1,5 @@
+int64 x # X Coordinate to reset to 
+int64 y # Y Coordinate to reset to
+string name # Name of turtle to be reset
+---
+bool success # Response indicating if it was successful
