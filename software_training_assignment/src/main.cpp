@@ -1,4 +1,9 @@
+/*
+The main client for the node 
+*/
+
 #include <ros/ros.h>
+#include <string>
 
 //Service for turtlesim spawn 
 #include <turtlesim/Spawn.h> 
@@ -9,7 +14,7 @@
 #include <std_srvs/Empty.h> 
 
 int main(int argc, char **argv) {
-    ros::init(argc, argv, "spawn_turtle"); 
+    ros::init(argc, argv, "main"); 
     ros::NodeHandle nh; 
 
     //Create Client object for the spawn service
