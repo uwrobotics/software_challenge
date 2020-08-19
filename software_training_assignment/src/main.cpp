@@ -17,6 +17,21 @@ int main(int argc, char **argv) {
     ros::init(argc, argv, "main"); 
     ros::NodeHandle nh; 
 
+    // Clear Turtles \\ 
+
+    //Create Client object for the Clear service
+    ros::ServiceClient clearClient = nh.ServiceClient <turtlesim::Clear>("clear");
+    //Calls the service, waits for the return
+    bool clearSuccess = clearClient.call();
+    //Checks if the service call was successful
+        if(clearSuccess) {
+            ROS_INFO_STREAM("Turtles Cleared");
+        } else {
+            ROS_ERROR_STREAM("Failed to clear turtles");
+        }
+
+    // Spawn Turtles \\ 
+
     //Create Client object for the spawn service
     ros::ServiceClient spawnClient = nh.ServiceClient <turtlesim::Spawn>("spawn");
 
