@@ -4,6 +4,7 @@ The main client for the node
 
 #include <ros/ros.h>
 #include <string>
+#include <math.h>
 
 //Service for turtlesim spawn 
 #include <turtlesim/Spawn.h> 
@@ -12,6 +13,22 @@ The main client for the node
 //(I am guessing it clears the turtles)
 //Based on the wording of the documentation
 #include <std_srvs/Empty.h> 
+
+//Including our custom message
+#include <software_training_assignment/turtleDistances.h> 
+
+//Class for determining the distances between the turtles
+class turtleDistance{
+    public:
+    int xd;
+    int yd;
+    int distance;
+    turtleDistance(int t1_x, int t1_y, int t2_x, int t2_y){
+       xd = t1_x - t2_x;
+       yd = t1_y - t2_y;
+       distance = sqrt(xd*xd + yd*yd); 
+    }
+}
 
 int main(int argc, char **argv) {
     ros::init(argc, argv, "main"); 
@@ -62,4 +79,9 @@ int main(int argc, char **argv) {
             ROS_ERROR_STREAM("Failed to spawn");
         }
     }
+
+    turtleDistance turtleDist(x_coords[0], y_coords[0], x_coords[1], y_coords[1]); 
+    //Publisher for turtle distances 
+    ros::Publisher turtleDist_pub = nh.advertise<turtleDistances>("turtle_distnaces", 10); 
+    turtleDist_pub.publish(turtleDist); 
 }
