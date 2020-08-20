@@ -17,6 +17,9 @@ The main client for the node
 //Including our custom message
 #include <software_training_assignment/turtleDistances.h> 
 
+//Include Action Library 
+#include <actionlib/client/simple_action_client.h> 
+
 //Class for determining the distances between the turtles
 class turtleDistance{
     public:
@@ -84,4 +87,20 @@ int main(int argc, char **argv) {
     //Publisher for turtle distances 
     ros::Publisher turtleDist_pub = nh.advertise<turtleDistances>("turtle_distnaces", 10); 
     turtleDist_pub.publish(turtleDist); 
+
+    //Creating a Action Client
+    actionlib::SImpleActionClient<actionlib> ac("move_turtle", true); 
+    ROS_INFO("Waiting for Action Server to start"); 
+    ac.waitForServer(); 
+    int x = 0; 
+    int y = 0; 
+    int goal[2] = {x, y}; 
+    ac.sendGoal(goal); 
+
+    bool waitForAction = ac.waitForResult(ros::Duration(30.0)); 
+    if(waitForAction){
+        ROS_INFO("Action Finished");
+    } else {
+        ROS_INFO("Action Failed");
+    }
 }
