@@ -6,6 +6,8 @@
             <param name="background_r" value="128" type="int" />
             <param name="background_g" value="128" type="int" />
         </node> 
+
+        <node pkg="software_training_assignment" type="main" name="main"/>
     </group>
 
 </launch>

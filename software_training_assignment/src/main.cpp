@@ -89,9 +89,10 @@ int main(int argc, char **argv) {
     turtleDist_pub.publish(turtleDist); 
 
     //Creating a Action Client
-    actionlib::SImpleActionClient<actionlib> ac("move_turtle", true); 
+    actionlib::SImpleActionClient<actionlib> ac("moveTurtle", true); 
     ROS_INFO("Waiting for Action Server to start"); 
     ac.waitForServer(); 
+    //Define the waypoint for which the turtle should move to 
     int x = 0; 
     int y = 0; 
     int goal[2] = {x, y}; 
