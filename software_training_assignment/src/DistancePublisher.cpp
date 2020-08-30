@@ -7,7 +7,7 @@
 // ctor
 DistancePublisher::DistancePublisher(ros::NodeHandle &n, Turtle* t1, Turtle* t2) : n_{n}, t1_{t1}, t2_{t2} {
     // init ros distance publisher
-    dist_pub_ = n_.advertise<software_training_assignment::Distance>("distance_publisher", 1000);
+    dist_pub_ = n_.advertise<software_training_assignment::Distance>("turtle_distance", 1000);
 }
 
 void DistancePublisher::publish() {
