@@ -1,0 +1,11 @@
+<launch>
+    
+    <node name="sim" pkg="turtlesim" type="turtlesim_node">
+      <rosparam param="background_r">128</rosparam>	
+      <rosparam param="background_g">128</rosparam> 
+      <rosparam param="background_b">0</rosparam>
+    </node>
+
+    <node name="my_turtle" pkg="software_training_assignment" type="my_turtle" output="screen" />
+
+</launch>
