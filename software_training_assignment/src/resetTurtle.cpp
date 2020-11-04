@@ -36,7 +36,7 @@ int main(int argc, char **argv) {
 
     //Link up the service 
     ros::ServiceServer resetTurtle = nh.advertiseService(
-        "resetTurtle", &TurtleReset::resetTurtlePosition, &Turtle); 
+        "resetTurtle", &TurtleReset::resetTurtlePosition, &turtle); 
 
     ros::spin(); //Creates a infinite loop for the server
 

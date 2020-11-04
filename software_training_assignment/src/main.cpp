@@ -23,9 +23,9 @@ The main client for the node
 //Class for determining the distances between the turtles
 class turtleDistance{
     public:
-    int xd;
-    int yd;
-    int distance;
+        int xd;
+        int yd;
+        int distance;
     turtleDistance(int t1_x, int t1_y, int t2_x, int t2_y){
        xd = t1_x - t2_x;
        yd = t1_y - t2_y;
@@ -89,7 +89,7 @@ int main(int argc, char **argv) {
     turtleDist_pub.publish(turtleDist); 
 
     //Creating a Action Client
-    actionlib::SImpleActionClient<actionlib> ac("moveTurtle", true); 
+    actionlib::SimpleActionClient<actionlib> ac("moveTurtle", true); 
     ROS_INFO("Waiting for Action Server to start"); 
     ac.waitForServer(); 
     //Define the waypoint for which the turtle should move to 
