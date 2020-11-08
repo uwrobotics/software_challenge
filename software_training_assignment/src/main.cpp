@@ -83,25 +83,29 @@ int main(int argc, char **argv) {
         }
     }
 
-    turtleDistance turtleDist(x_coords[0], y_coords[0], x_coords[1], y_coords[1]); 
-    //Publisher for turtle distances 
-    ros::Publisher turtleDist_pub = nh.advertise<turtleDistances>("turtle_distnaces", 10); 
-    turtleDist_pub.publish(turtleDist); 
+    //Infinite loop to run
+    while(true){
+        turtleDistance turtleDist(x_coords[0], y_coords[0], x_coords[1], y_coords[1]); 
+        //Publisher for turtle distances 
+        ros::Publisher turtleDist_pub = nh.advertise<turtleDistances>("turtle_distnaces", 10); 
+        turtleDist_pub.publish(turtleDist); 
 
-    //Creating a Action Client
-    actionlib::SimpleActionClient<actionlib> ac("moveTurtle", true); 
-    ROS_INFO("Waiting for Action Server to start"); 
-    ac.waitForServer(); 
-    //Define the waypoint for which the turtle should move to 
-    int x = 0; 
-    int y = 0; 
-    int goal[2] = {x, y}; 
-    ac.sendGoal(goal); 
+        //Creating a Action Client
+        actionlib::SimpleActionClient<actionlib> ac("moveTurtle", true); 
+        ROS_INFO("Waiting for Action Server to start"); 
+        ac.waitForServer(); 
+        //Define the waypoint for which the turtle should move to 
+        int x = 0; 
+        int y = 0; 
+        int goal[2] = {x, y}; 
+        ac.sendGoal(goal); 
 
-    bool waitForAction = ac.waitForResult(ros::Duration(30.0)); 
-    if(waitForAction){
-        ROS_INFO("Action Finished");
-    } else {
-        ROS_INFO("Action Failed");
+        bool waitForAction = ac.waitForResult(ros::Duration(30.0)); 
+        if(waitForAction){
+            ROS_INFO("Action Finished");
+        } else {
+            ROS_INFO("Action Failed");
+        }
     }
+    
 }
