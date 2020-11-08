@@ -1,0 +1,9 @@
+# Action goal 
+int64 abs_x
+int64 abs_y
+---
+# Action Feedback
+int64 abs_distance
+---
+# Action result (time in sec)
+int64 time
