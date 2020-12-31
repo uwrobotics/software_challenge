@@ -1,0 +1,3 @@
+float64 x_stationary_turtle_to_moving_turtle
+float64 y_stationary_turtle_to_moving_turtle
+float64 distance
