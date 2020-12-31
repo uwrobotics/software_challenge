@@ -1,0 +1,9 @@
+<launch>
+    <node name="turtlesim_node" pkg="turtlesim" type="turtlesim_node">
+        <param name="background_b" value="0" type="int"/>
+        <param name="background_g" value="128" type="int"/>
+        <param name="background_r" value="128" type="int"/>
+    </node>
+
+    <node name="software_training_node" pkg="software_training" type="software_training_node"/>
+</launch>
