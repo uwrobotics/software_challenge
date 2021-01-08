@@ -13,6 +13,9 @@
 //This publisher is to be initalized with gemoetery_msgs/Twist !!
 ros::Publisher SeekTurtlePub; //Global since Main needs access to this
 
+constexpr double RESET_X = 25.0;
+constexpr double RESET_Y = 10.0;
+
 
 struct Waypoint
 {
@@ -31,7 +34,7 @@ float distance(float x, float y)
 
 float arctanAbsolute(float x, float y)
 {
-    const float DEGREES_IN_QUADRANT = 90;
+    float DEGREES_IN_QUADRANT = 90;
     float arctangent = atan(x/y)*M_PI;
     if(y > 0 && x < 0)
     {
@@ -92,8 +95,7 @@ bool spawnTurtle(std::string name, double x, double y, double angle)
 
 bool resetTurtlePosition(software_training_assignment::resetTurtle::Request &request, software_training_assignment::resetTurtle::Response &response)
 {
-    const double RESET_X = 25;
-    const double RESET_Y = 10;
+    
     std::string name = request.name;  //QUESTION: Why do I not need to dereference this??
     return(clearTurtle(name) && spawnTurtle(name, RESET_X, RESET_Y, 0));
 }
@@ -107,12 +109,11 @@ void move_turtle_callBack(const software_training_assignment::SeekTurtleGoalCons
 
     geometry_msgs::Twist msg;
     
-    const float timeInterval = 1; //arbitary time interval?
+    float timeInterval = 1; //arbitary time interval?
     ros::Rate rate(1/timeInterval);
-    const float totalTime = 10;
-    //Declared volatile since I'm not sure how exactly goal is updated...?
-    float volatile deltaX = movingTurtleWP.x - goal->x;
-    float volatile deltaY= movingTurtleWP.y - goal->y;
+    float totalTime = 10;
+    float deltaX = movingTurtleWP.x - goal->x;
+    float deltaY= movingTurtleWP.y - goal->y;
     float deltaDistance = distance(deltaX, deltaY);
 
     bool successful = true;
