@@ -29,7 +29,7 @@ float distance(float x, float y)
     return pow(pow(x,2) + pow(y,2), 1/float(2));
 }
 
-float arctan(float x, float y)
+float arctanAbsolute(float x, float y)
 {
     const float DEGREES_IN_QUADRANT = 90;
     float arctangent = atan(x/y)*M_PI;
@@ -54,7 +54,7 @@ void calculateDistance(Waypoint targetWaypoint, Waypoint currentWaypoint, Waypoi
     resultWaypoint.x = targetWaypoint.x - currentWaypoint.x;
     resultWaypoint.y = targetWaypoint.y - currentWaypoint.y;
     resultWaypoint.distance = distance(resultWaypoint.x, resultWaypoint.y);
-    resultWaypoint.angle = arctan(resultWaypoint.x, resultWaypoint.y);
+    resultWaypoint.angle = arctanAbsolute(resultWaypoint.x, resultWaypoint.y);
 }
 
 void updateDistanceMsg(ros::NodeHandle &n, Waypoint DistanceStruct)
@@ -125,7 +125,7 @@ void move_turtle_callBack(const software_training_assignment::SeekTurtleGoalCons
             successful = false;
         }
 
-        msg.angular.z = arctan(deltaX, deltaY);
+        msg.angular.z = arctanAbsolute(deltaX, deltaY);
         msg.linear.x = deltaDistance/totalTime; //linear speed
         SeekTurtlePub.publish(msg);
         feedback.distance = distance(deltaX, deltaY);
