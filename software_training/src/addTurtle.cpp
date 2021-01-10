@@ -45,12 +45,19 @@ int main(int argc, char **argv){
 
    ros::service::waitForService("spawn", ros::Duration(5));
    bool success = spawnClient.call(req,resp);
-   success = spawnClient.call(req2,resp2);
+   bool success2 = spawnClient.call(req2,resp2);
 
 
    if(success){
        ROS_INFO_STREAM("Spawned a turtle named "
                        << resp.name);
+   }else{
+       ROS_ERROR_STREAM("Failed to spawn.");
+   } 
+   
+   if(success2){
+       ROS_INFO_STREAM("Spawned a turtle named "
+                       << resp2.name);
    }else{
        ROS_ERROR_STREAM("Failed to spawn.");
    }

@@ -1,8 +1,8 @@
 #include <ros/ros.h>
 #include <actionlib/client/simple_action_client.h>
-#include <actionlib/>
-#include "std_msgs/String.h"
-#include "geometry_msgs/Twist.h"
+#include <actionlib>
+#include <std_msgs/String.h>
+#include <geometry_msgs/Twist.h>
 #include <sstream>
 #include <cmath>
 #include "software_training/Distance.h"
@@ -17,15 +17,16 @@ int main (int argc, char **argv)
        = nh.advertise<geometry_msgs::Twist>("/moving_turtle/cmd_vel", 1000);
   // create the action client
   // true causes the client to spin its own thread
-
-  actionlib::SimpleActionClient<goemetry_msgs::Twist>("action", true);
+  
+  //actionlib::SimpleActionClient<goemetry_msgs::Twist>("action", true);
+  actionlib::SimpleActionClient<software_training_assignment::Action> actionClient("action", true);
 
   Server server(n, "action", boost::bind(&execute, _1, &server), false);
   server.start();
 
   ROS_INFO("Waiting for action server to start.");
   // wait for the action server to start
-  ac.waitForServer(); //will wait for infinite time
+  actionClient.waitForServer(); //will wait for infinite time
 
   ROS_INFO("Action server started, sending goal.");
   // send a goal to the action
