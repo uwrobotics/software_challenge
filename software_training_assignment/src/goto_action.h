@@ -27,7 +27,6 @@ namespace A
 	    	{
 		    	x = msg->x;
 		    	y = msg->y;
-				// ROS_INFO_STREAM("x: " << x << " y: " << y);
 	    	}
 
 	    	void executeCB(const software_training_assignment::GotoGoal::ConstPtr &goal)
@@ -37,11 +36,10 @@ namespace A
 		    	double relativeX = goal->x - x,
 		    	       relativeY = goal->y - y,
 		            	relativeDist = sqrt(pow(relativeX, 2) + pow(relativeY, 2)),
-		    		theta = acos(relativeX / relativeDist),
-		    		angVel = theta;
+		    		theta = acos(relativeX / relativeDist);
 
 				if (relativeY < 0)
-					angVel *= -1;
+					theta *= -1;
 
 		    	bool success = true;
 
@@ -50,7 +48,7 @@ namespace A
 		    	feedback_.distance = relativeDist;
 		    	as_.publishFeedback(feedback_);
 			
-			    rotation.angular.z = angVel;
+			    rotation.angular.z = theta;
 
 		    	pub.publish(rotation);
 

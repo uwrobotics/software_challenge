@@ -45,7 +45,7 @@ int main(int argc, char **argv)
 
     if(client.call(srv))
     {
-        ROS_INFO("resetted");
+        ROS_INFO("Test resetted");
     }
     else
     {
