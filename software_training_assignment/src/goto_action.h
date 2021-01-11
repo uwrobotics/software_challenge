@@ -9,7 +9,6 @@ namespace A
     {
     	public:
     		ros::NodeHandle node;
-			actionlib::SimpleActionServer<software_training_assignment::GotoAction> as_;
     		GotoAction(std::string name) : as_(node, name, boost::bind(&GotoAction::executeCB, this, _1), false)
 	    	{
 	    		as_.start();
@@ -94,6 +93,7 @@ namespace A
 	
 	    protected:
 		    software_training_assignment::GotoFeedback feedback_;
+			actionlib::SimpleActionServer<software_training_assignment::GotoAction> as_;
 	    	software_training_assignment::GotoResult result_;
     };
 }
