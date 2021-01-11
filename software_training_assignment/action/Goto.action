@@ -1,0 +1,6 @@
+float32 x
+float32 y
+---
+duration time_elapsed
+---
+float32 distance
