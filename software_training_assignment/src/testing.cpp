@@ -8,6 +8,12 @@ int main(int argc, char **argv)
 {
     ros::init(argc, argv, "test_node");
 
+    if (argc != 3)
+    {
+        ROS_INFO("rosrun software_training_assignment testing x y");
+        return 0;
+    }
+
     ros::NodeHandle n;
 
     actionlib::SimpleActionClient<software_training_assignment::GotoAction> ac ("turtlesim1/goto", true);
@@ -21,8 +27,8 @@ int main(int argc, char **argv)
 
     software_training_assignment::GotoGoal goal;
 
-    goal.x = 6;
-    goal.y = 6;
+    goal.x = atoll(argv[1]);
+    goal.y = atoll(argv[2]);
 
     ac.sendGoal(goal);
 
