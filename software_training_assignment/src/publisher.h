@@ -14,8 +14,6 @@ namespace P
 			msg.x = x - 5;
 			msg.y = y - 5;
 			msg.distance = sqrt(pow(msg.x, 2) + pow(msg.y, 2));
-			
-	//		ROS_INFO_STREAM("x:" << msg.x << " y: " << msg.y);
 
 			pub.publish(msg);
 		}
@@ -23,7 +21,6 @@ namespace P
 		{
 			x = msg->x;
 			y = msg->y;
-	//		ROS_INFO_STREAM("moving turtle x: " << x << " y: " << y);
 		}
 		double x = 0, y = 0;
 		ros::Publisher pub;
