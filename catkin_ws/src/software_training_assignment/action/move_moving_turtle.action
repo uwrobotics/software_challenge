@@ -1,0 +1,8 @@
+# goal def
+int32 position_of_waypoint
+---
+# result def
+int32 distance_to_goal
+---
+# feedback
+float32 time_taken
