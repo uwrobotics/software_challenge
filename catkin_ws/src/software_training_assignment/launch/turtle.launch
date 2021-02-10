@@ -1,0 +1,11 @@
+<launch>
+
+  <group ns="turtlesim1">
+    <node pkg="turtlesim" name="sim" type="turtlesim_node">
+      <rosparam param="background_r">128</rosparam>
+      <rosparam param="background_g">128</rosparam>
+      <rosparam param="background_b">0</rosparam>
+    </node>
+  </group>
+
+</launch>
