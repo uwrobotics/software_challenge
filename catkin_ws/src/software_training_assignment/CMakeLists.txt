@@ -5,10 +5,16 @@ find_package(catkin REQUIRED
         std_msgs
         message_generation
         turtlesim
+        actionlib_msgs
 )
 add_message_files(
         FILES
         distance.msg
+)
+add_action_files(
+        DIRECTORY action
+        FILES
+        move_moving_turtle.action
 )
 add_service_files(
         FILES
@@ -17,12 +23,14 @@ add_service_files(
 generate_messages(
         DEPENDENCIES
         std_msgs
+        actionlib_msgs
 )
 catkin_package(
         CATKIN_DEPENDS
         roscpp
         std_msgs
         turtlesim
+        actionlib_msgs
 )
 include_directories(
         include
@@ -37,10 +45,10 @@ install(DIRECTORY include/${PROJECT_NAME}/
 )
 
 
-add_executable(main_node src/main_node.cpp)
+add_executable(main_node src/main_node.cpp src/spawn_turtle.cpp)
 target_link_libraries(main_node ${catkin_LIBRARIES})
 add_dependencies(main_node software_training_assignment_generate_messages_cpp)
 
-#add_executable(spawn_turtle src/spawn_turtle.cpp)
-#target_link_libraries(spawn_turtle ${catkin_LIBRARIES})
-#target_link_libraries(main_node spawn_turtle)
+add_executable(move_turtle_action src/move_turtle_action.cpp)
+target_link_libraries(move_turtle_action ${catkin_LIBRARIES})
+add_dependencies(move_turtle_action software_training_assignment_generate_messages_cpp)

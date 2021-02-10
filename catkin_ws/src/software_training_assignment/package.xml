@@ -12,4 +12,6 @@
   <depend>roscpp</depend>
   <depend>std_msgs</depend>
   <depend>turtlesim</depend>
+  <depend>actionlib_msgs</depend>
+  <exec_depend>message_generation</exec_depend>
 </package>
