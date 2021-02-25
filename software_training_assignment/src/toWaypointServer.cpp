@@ -100,7 +100,7 @@ class WaypointAction
 int main(int argc, char** argv)
 {
   ros::init(argc, argv, "toWaypointServer");
-  WaypointAction wa("m", "moving_turtle", 100.0, 0.01);
+  WaypointAction wa("moving_turtle_action", "moving_turtle", 100.0, 0.01);
   ros::spin();
   return 0;
 }
