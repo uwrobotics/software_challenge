@@ -1,0 +1,13 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="tsim">
+        <param name="~background_r" value="128"/>
+        <param name="~background_g" value="0"/>
+        <param name="~background_b" value="128"/>
+    </node>
+    <node pkg="software_training_assignment" type="sw_training" name="main" />
+    <node pkg="software_training_assignment" type="toWaypointServer" name="actionNode" />
+    <node pkg="software_training_assignment" type="toStart_server" name="toStart" />
+    <node pkg="software_training_assignment" type="distance_node" name="dNode" />
+    
+
+</launch>
