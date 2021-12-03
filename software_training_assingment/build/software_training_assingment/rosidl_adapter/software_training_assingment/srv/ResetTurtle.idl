@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from software_training_assingment/srv/ResetTurtle.srv
+// generated code does not contain a copyright notice
+
+
+module software_training_assingment {
+  module srv {
+    struct ResetTurtle_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct ResetTurtle_Response {
+      boolean success;
+    };
+  };
+};
