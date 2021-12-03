@@ -1,0 +1,19 @@
+{
+  "package_name": "software_training_assingment",
+  "output_dir": "/home/alikasim/dev_ws/src/software_training_assingment/build/software_training_assingment/rosidl_typesupport_introspection_cpp/software_training_assingment",
+  "template_dir": "/home/alikasim/ros2_foxy/install/rosidl_typesupport_introspection_cpp/share/rosidl_typesupport_introspection_cpp/resource",
+  "idl_tuples": [
+    "/home/alikasim/dev_ws/src/software_training_assingment/build/software_training_assingment/rosidl_adapter/software_training_assingment:srv/ResetTurtle.idl"
+  ],
+  "target_dependencies": [
+    "/home/alikasim/ros2_foxy/install/rosidl_typesupport_introspection_cpp/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp",
+    "/home/alikasim/ros2_foxy/install/rosidl_typesupport_introspection_cpp/lib/python3.8/site-packages/rosidl_typesupport_introspection_cpp/__init__.py",
+    "/home/alikasim/ros2_foxy/install/rosidl_typesupport_introspection_cpp/share/rosidl_typesupport_introspection_cpp/resource/idl__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/home/alikasim/ros2_foxy/install/rosidl_typesupport_introspection_cpp/share/rosidl_typesupport_introspection_cpp/resource/idl__type_support.cpp.em",
+    "/home/alikasim/ros2_foxy/install/rosidl_typesupport_introspection_cpp/share/rosidl_typesupport_introspection_cpp/resource/msg__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/home/alikasim/ros2_foxy/install/rosidl_typesupport_introspection_cpp/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
+    "/home/alikasim/ros2_foxy/install/rosidl_typesupport_introspection_cpp/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/home/alikasim/ros2_foxy/install/rosidl_typesupport_introspection_cpp/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
+    "/home/alikasim/dev_ws/src/software_training_assingment/build/software_training_assingment/rosidl_adapter/software_training_assingment/srv/ResetTurtle.idl"
+  ]
+}

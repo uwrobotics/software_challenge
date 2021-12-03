@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alikasim/dev_ws/src/software_training_assingment/build/software_training_assingment/rosidl_generator_c/software_training_assingment/srv/detail/reset_turtle__functions.c
+software_training_assingment/srv/detail/reset_turtle__functions.h
+/home/alikasim/dev_ws/src/software_training_assingment/build/software_training_assingment/rosidl_generator_c/software_training_assingment/srv/detail/software_training_assingment/srv/detail/reset_turtle__functions.h
+assert.h
+-
+stdbool.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/alikasim/ros2_foxy/install/rosidl_runtime_c/include/rosidl_runtime_c/visibility_control.h
+
+rosidl_generator_c/software_training_assingment/msg/rosidl_generator_c__visibility_control.h
+
+rosidl_generator_c/software_training_assingment/srv/detail/reset_turtle__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/software_training_assingment/srv/detail/rosidl_runtime_c/visibility_control.h
+software_training_assingment/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/software_training_assingment/srv/detail/software_training_assingment/msg/rosidl_generator_c__visibility_control.h
+software_training_assingment/srv/detail/reset_turtle__struct.h
+rosidl_generator_c/software_training_assingment/srv/detail/software_training_assingment/srv/detail/reset_turtle__struct.h
+
+rosidl_generator_c/software_training_assingment/srv/detail/reset_turtle__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+

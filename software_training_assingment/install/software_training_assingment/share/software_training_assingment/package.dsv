@@ -1,0 +1,14 @@
+source;share/software_training_assingment/hook/cmake_prefix_path.ps1
+source;share/software_training_assingment/hook/cmake_prefix_path.dsv
+source;share/software_training_assingment/hook/cmake_prefix_path.sh
+source;share/software_training_assingment/hook/ld_library_path_lib.ps1
+source;share/software_training_assingment/hook/ld_library_path_lib.dsv
+source;share/software_training_assingment/hook/ld_library_path_lib.sh
+source;share/software_training_assingment/hook/pythonpath.ps1
+source;share/software_training_assingment/hook/pythonpath.dsv
+source;share/software_training_assingment/hook/pythonpath.sh
+source;share/software_training_assingment/local_setup.bash
+source;share/software_training_assingment/local_setup.dsv
+source;share/software_training_assingment/local_setup.ps1
+source;share/software_training_assingment/local_setup.sh
+source;share/software_training_assingment/local_setup.zsh

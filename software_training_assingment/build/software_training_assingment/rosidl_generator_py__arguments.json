@@ -1,0 +1,24 @@
+{
+  "package_name": "software_training_assingment",
+  "output_dir": "/home/alikasim/dev_ws/src/software_training_assingment/build/software_training_assingment/rosidl_generator_py/software_training_assingment",
+  "template_dir": "/home/alikasim/ros2_foxy/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource",
+  "idl_tuples": [
+    "/home/alikasim/dev_ws/src/software_training_assingment/build/software_training_assingment/rosidl_adapter/software_training_assingment:srv/ResetTurtle.idl"
+  ],
+  "target_dependencies": [
+    "/home/alikasim/ros2_foxy/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
+    "/home/alikasim/ros2_foxy/install/rosidl_generator_py/lib/python3.8/site-packages/rosidl_generator_py/__init__.py",
+    "/home/alikasim/ros2_foxy/install/rosidl_generator_py/lib/python3.8/site-packages/rosidl_generator_py/generate_py_impl.py",
+    "/home/alikasim/ros2_foxy/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_action_pkg_typesupport_entry_point.c.em",
+    "/home/alikasim/ros2_foxy/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_action.py.em",
+    "/home/alikasim/ros2_foxy/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_idl_pkg_typesupport_entry_point.c.em",
+    "/home/alikasim/ros2_foxy/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_idl_support.c.em",
+    "/home/alikasim/ros2_foxy/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_idl.py.em",
+    "/home/alikasim/ros2_foxy/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_msg_pkg_typesupport_entry_point.c.em",
+    "/home/alikasim/ros2_foxy/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_msg_support.c.em",
+    "/home/alikasim/ros2_foxy/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
+    "/home/alikasim/ros2_foxy/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
+    "/home/alikasim/ros2_foxy/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
+    "/home/alikasim/dev_ws/src/software_training_assingment/build/software_training_assingment/rosidl_adapter/software_training_assingment/srv/ResetTurtle.idl"
+  ]
+}
