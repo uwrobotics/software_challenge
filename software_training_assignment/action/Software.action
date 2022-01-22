@@ -1,0 +1,15 @@
+# Goal Request /moving_turtle/cmd_vel
+float32 x_pos 
+float32 y_pos
+
+# Result - time
+---
+uint64 duration
+ 
+---
+# feedback distance
+# float32 dist
+float32 dist
+
+
+
