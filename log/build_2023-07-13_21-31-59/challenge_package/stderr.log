@@ -1,0 +1,4 @@
+[01m[K/home/evanw/Desktop/uwrt/challenge_ws/src/challenge_package/src/move_circle.cpp:[m[K In member function ‘[01m[Kvoid MoveTurtleCircularService::handle_move_req(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/evanw/Desktop/uwrt/challenge_ws/src/challenge_package/src/move_circle.cpp:43:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   43 |         [01;35m[Kconst std::shared_ptr<trigger_srv::Request> request[m[K, std::shared_ptr<std_srvs::srv::Trigger::Response> response
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K

@@ -1,0 +1,2 @@
+Invoking command in '/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package -- -j8 -l8
+Invoked command in '/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package -- -j8 -l8

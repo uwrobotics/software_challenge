@@ -1,0 +1,25 @@
+[0.020s] Invoking command in '/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package -- -j8 -l8
+[0.089s] [  3%] Built target challenge_package__cpp
+[0.090s] [ 12%] Built target challenge_package__rosidl_generator_c
+[0.120s] [ 21%] Built target challenge_package__rosidl_typesupport_introspection_cpp
+[0.121s] [ 30%] Built target challenge_package__rosidl_typesupport_cpp
+[0.131s] [ 39%] Built target challenge_package__rosidl_typesupport_c
+[0.132s] [ 48%] Built target challenge_package__rosidl_typesupport_introspection_c
+[0.133s] [ 57%] Built target challenge_package__rosidl_typesupport_fastrtps_cpp
+[0.159s] [ 66%] Built target challenge_package__rosidl_typesupport_fastrtps_c
+[0.180s] [ 66%] Built target challenge_package
+[0.194s] [35m[1mScanning dependencies of target clear_turtle_listener[0m
+[0.205s] [ 69%] Built target challenge_package__py
+[0.241s] [ 75%] Built target challenge_package__python
+[0.248s] [ 78%] [32mBuilding CXX object CMakeFiles/clear_turtle_listener.dir/src/clear_turtles.cpp.o[0m
+[0.279s] [ 84%] Built target challenge_package__rosidl_typesupport_c__pyext
+[0.284s] [ 90%] Built target challenge_package__rosidl_typesupport_fastrtps_c__pyext
+[0.284s] [ 96%] Built target challenge_package__rosidl_typesupport_introspection_c__pyext
+[3.995s] [100%] [32m[1mLinking CXX executable clear_turtle_listener[0m
+[4.089s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[4.089s] (.text+0x24): undefined reference to `main'
+[4.089s] collect2: error: ld returned 1 exit status
+[4.091s] make[2]: *** [CMakeFiles/clear_turtle_listener.dir/build.make:148: clear_turtle_listener] Error 1
+[4.092s] make[1]: *** [CMakeFiles/Makefile2:124: CMakeFiles/clear_turtle_listener.dir/all] Error 2
+[4.092s] make: *** [Makefile:141: all] Error 2
+[4.095s] Invoked command in '/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package -- -j8 -l8

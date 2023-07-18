@@ -1,0 +1,178 @@
+[0.000000] (-) TimerEvent: {}
+[0.000481] (challenge_package) JobQueued: {'identifier': 'challenge_package', 'dependencies': OrderedDict()}
+[0.000703] (challenge_package) JobStarted: {'identifier': 'challenge_package'}
+[0.011986] (challenge_package) JobProgress: {'identifier': 'challenge_package', 'progress': 'cmake'}
+[0.014159] (challenge_package) JobProgress: {'identifier': 'challenge_package', 'progress': 'build'}
+[0.014247] (challenge_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package', '--', '-j8', '-l8'], 'cwd': '/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'evanw'), ('SSH_AGENT_PID', '1633'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/evanw'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.79.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1450'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1983'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/evanw/Desktop/uwrt/challenge_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'evanw'), ('JOURNAL_STREAM', '8:48164'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'evanw'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/evanw-HP-Spectre-x360-Convertible-13-aw0xxx:@/tmp/.ICE-unix/1671,unix/evanw-HP-Spectre-x360-Convertible-13-aw0xxx:/tmp/.ICE-unix/1671'), ('INVOCATION_ID', '1307cd4acf994a0498bae00d0863822c'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-e67e526051.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package:/opt/ros/galactic'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package:/opt/ros/galactic')]), 'shell': False}
+[0.057433] (challenge_package) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target circle_turtle_service\x1b[0m\n'}
+[0.069689] (challenge_package) StdoutLine: {'line': b'[  8%] Built target challenge_package__rosidl_generator_c\n'}
+[0.071118] (challenge_package) StdoutLine: {'line': b'[ 11%] Built target challenge_package__cpp\n'}
+[0.099823] (-) TimerEvent: {}
+[0.107831] (challenge_package) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/circle_turtle_service.dir/src/move_circle.cpp.o\x1b[0m\n'}
+[0.108218] (challenge_package) StdoutLine: {'line': b'[ 22%] Built target challenge_package__rosidl_typesupport_introspection_c\n'}
+[0.110706] (challenge_package) StdoutLine: {'line': b'[ 31%] Built target challenge_package__rosidl_typesupport_cpp\n'}
+[0.115590] (challenge_package) StdoutLine: {'line': b'[ 40%] Built target challenge_package__rosidl_typesupport_c\n'}
+[0.117504] (challenge_package) StdoutLine: {'line': b'[ 48%] Built target challenge_package__rosidl_typesupport_introspection_cpp\n'}
+[0.118275] (challenge_package) StdoutLine: {'line': b'[ 57%] Built target challenge_package__rosidl_typesupport_fastrtps_cpp\n'}
+[0.149778] (challenge_package) StdoutLine: {'line': b'[ 65%] Built target challenge_package__rosidl_typesupport_fastrtps_c\n'}
+[0.172011] (challenge_package) StdoutLine: {'line': b'[ 65%] Built target challenge_package\n'}
+[0.199944] (-) TimerEvent: {}
+[0.200316] (challenge_package) StdoutLine: {'line': b'[ 68%] Built target challenge_package__py\n'}
+[0.214467] (challenge_package) StdoutLine: {'line': b'[ 74%] Built target clear_turtle_listener\n'}
+[0.241274] (challenge_package) StdoutLine: {'line': b'[ 80%] Built target challenge_package__python\n'}
+[0.279517] (challenge_package) StdoutLine: {'line': b'[ 85%] Built target challenge_package__rosidl_typesupport_c__pyext\n'}
+[0.280290] (challenge_package) StdoutLine: {'line': b'[ 91%] Built target challenge_package__rosidl_typesupport_introspection_c__pyext\n'}
+[0.280643] (challenge_package) StdoutLine: {'line': b'[ 97%] Built target challenge_package__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.300053] (-) TimerEvent: {}
+[0.400423] (-) TimerEvent: {}
+[0.500949] (-) TimerEvent: {}
+[0.601310] (-) TimerEvent: {}
+[0.701773] (-) TimerEvent: {}
+[0.802163] (-) TimerEvent: {}
+[0.902533] (-) TimerEvent: {}
+[1.002878] (-) TimerEvent: {}
+[1.103280] (-) TimerEvent: {}
+[1.203685] (-) TimerEvent: {}
+[1.304023] (-) TimerEvent: {}
+[1.404414] (-) TimerEvent: {}
+[1.504842] (-) TimerEvent: {}
+[1.605248] (-) TimerEvent: {}
+[1.705590] (-) TimerEvent: {}
+[1.805969] (-) TimerEvent: {}
+[1.843330] (challenge_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evanw/Desktop/uwrt/challenge_ws/src/challenge_package/src/move_circle.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MoveTurtleCircularService::handle_move_req(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.843554] (challenge_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evanw/Desktop/uwrt/challenge_ws/src/challenge_package/src/move_circle.cpp:43:53:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Krequest\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.843630] (challenge_package) StderrLine: {'line': b'   43 |         \x1b[01;35m\x1b[Kconst std::shared_ptr<trigger_srv::Request> request\x1b[m\x1b[K, std::shared_ptr<std_srvs::srv::Trigger::Response> response\n'}
+[1.843692] (challenge_package) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[1.906148] (-) TimerEvent: {}
+[2.006432] (-) TimerEvent: {}
+[2.106808] (-) TimerEvent: {}
+[2.207233] (-) TimerEvent: {}
+[2.307644] (-) TimerEvent: {}
+[2.408035] (-) TimerEvent: {}
+[2.508416] (-) TimerEvent: {}
+[2.608813] (-) TimerEvent: {}
+[2.709156] (-) TimerEvent: {}
+[2.809630] (-) TimerEvent: {}
+[2.909999] (-) TimerEvent: {}
+[3.010403] (-) TimerEvent: {}
+[3.110816] (-) TimerEvent: {}
+[3.211189] (-) TimerEvent: {}
+[3.311590] (-) TimerEvent: {}
+[3.411996] (-) TimerEvent: {}
+[3.512465] (-) TimerEvent: {}
+[3.612879] (-) TimerEvent: {}
+[3.713243] (-) TimerEvent: {}
+[3.813625] (-) TimerEvent: {}
+[3.913971] (-) TimerEvent: {}
+[4.014347] (-) TimerEvent: {}
+[4.114722] (-) TimerEvent: {}
+[4.116209] (challenge_package) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable circle_turtle_service\x1b[0m\n'}
+[4.214847] (-) TimerEvent: {}
+[4.312285] (challenge_package) StdoutLine: {'line': b'[100%] Built target circle_turtle_service\n'}
+[4.314939] (-) TimerEvent: {}
+[4.322741] (challenge_package) CommandEnded: {'returncode': 0}
+[4.369606] (challenge_package) JobProgress: {'identifier': 'challenge_package', 'progress': 'install'}
+[4.379473] (challenge_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package'], 'cwd': '/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'evanw'), ('SSH_AGENT_PID', '1633'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/evanw'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.79.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1450'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1983'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/evanw/Desktop/uwrt/challenge_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'evanw'), ('JOURNAL_STREAM', '8:48164'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'evanw'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/evanw-HP-Spectre-x360-Convertible-13-aw0xxx:@/tmp/.ICE-unix/1671,unix/evanw-HP-Spectre-x360-Convertible-13-aw0xxx:/tmp/.ICE-unix/1671'), ('INVOCATION_ID', '1307cd4acf994a0498bae00d0863822c'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-e67e526051.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package:/opt/ros/galactic'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package:/opt/ros/galactic')]), 'shell': False}
+[4.389088] (challenge_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.389553] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/ament_index/resource_index/rosidl_interfaces/challenge_package\n'}
+[4.389791] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package\n'}
+[4.389958] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg\n'}
+[4.390052] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.390146] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/names.h\n'}
+[4.390350] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail\n'}
+[4.390424] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__functions.h\n'}
+[4.390495] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__struct.h\n'}
+[4.390603] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__functions.c\n'}
+[4.390681] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__type_support.h\n'}
+[4.390750] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/environment/library_path.sh\n'}
+[4.390901] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/environment/library_path.dsv\n'}
+[4.391012] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/libchallenge_package__rosidl_generator_c.so\n'}
+[4.391112] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package\n'}
+[4.391211] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg\n'}
+[4.391272] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.391330] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail\n'}
+[4.391425] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__rosidl_typesupport_fastrtps_c.h\n'}
+[4.391543] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/libchallenge_package__rosidl_typesupport_fastrtps_c.so\n'}
+[4.391603] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package\n'}
+[4.391670] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg\n'}
+[4.391810] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.391869] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail\n'}
+[4.391938] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.392000] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/dds_fastrtps\n'}
+[4.392061] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/libchallenge_package__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.392148] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package\n'}
+[4.392220] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg\n'}
+[4.392279] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.392436] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail\n'}
+[4.392563] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__type_support.c\n'}
+[4.392667] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__rosidl_typesupport_introspection_c.h\n'}
+[4.392724] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/libchallenge_package__rosidl_typesupport_introspection_c.so\n'}
+[4.392834] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/libchallenge_package__rosidl_typesupport_c.so\n'}
+[4.392889] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package\n'}
+[4.392943] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg\n'}
+[4.393098] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/names.hpp\n'}
+[4.393195] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail\n'}
+[4.393257] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__struct.hpp\n'}
+[4.393381] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__builder.hpp\n'}
+[4.393443] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__traits.hpp\n'}
+[4.393498] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package\n'}
+[4.393553] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg\n'}
+[4.393605] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail\n'}
+[4.393658] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__type_support.cpp\n'}
+[4.393742] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.393795] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/libchallenge_package__rosidl_typesupport_introspection_cpp.so\n'}
+[4.393853] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/libchallenge_package__rosidl_typesupport_cpp.so\n'}
+[4.393906] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/environment/pythonpath.sh\n'}
+[4.393963] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/environment/pythonpath.dsv\n'}
+[4.394016] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages/challenge_package/__init__.py\n'}
+[4.415112] (-) TimerEvent: {}
+[4.422336] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages/challenge_package/msg\n'}
+[4.422700] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages/challenge_package/msg/__init__.py\n'}
+[4.422771] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages/challenge_package/msg/_names.py\n'}
+[4.422840] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages/challenge_package/msg/_names_s.c\n'}
+[4.422947] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages/challenge_package/challenge_package_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.424549] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages/challenge_package/challenge_package_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.424835] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages/challenge_package/challenge_package_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.427412] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/libchallenge_package__python.so\n'}
+[4.427637] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/msg/Names.idl\n'}
+[4.427788] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/msg/Names.msg\n'}
+[4.427925] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/challenge_package/clear_turtle_listener\n'}
+[4.428068] (challenge_package) StdoutLine: {'line': b'-- Installing: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/challenge_package/circle_turtle_service\n'}
+[4.428191] (challenge_package) StdoutLine: {'line': b'-- Set runtime path of "/home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/challenge_package/circle_turtle_service" to ""\n'}
+[4.428290] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/ament_index/resource_index/package_run_dependencies/challenge_package\n'}
+[4.428413] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/ament_index/resource_index/parent_prefix_path/challenge_package\n'}
+[4.428817] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/environment/ament_prefix_path.sh\n'}
+[4.428976] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/environment/ament_prefix_path.dsv\n'}
+[4.429190] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/environment/path.sh\n'}
+[4.429368] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/environment/path.dsv\n'}
+[4.429667] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/local_setup.bash\n'}
+[4.429829] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/local_setup.sh\n'}
+[4.430014] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/local_setup.zsh\n'}
+[4.430174] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/local_setup.dsv\n'}
+[4.430401] (challenge_package) StdoutLine: {'line': b'-- Installing: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/package.dsv\n'}
+[4.430519] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/ament_index/resource_index/packages/challenge_package\n'}
+[4.430668] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_generator_cExport.cmake\n'}
+[4.430836] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.430982] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.431141] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.431330] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_typesupport_cExport.cmake\n'}
+[4.431460] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.431567] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_generator_cppExport.cmake\n'}
+[4.431683] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.431791] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.431904] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_typesupport_cppExport.cmake\n'}
+[4.432011] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.432128] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/rosidl_cmake-extras.cmake\n'}
+[4.432238] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.432349] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.432494] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.432802] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.433024] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.433151] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.433275] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_packageConfig.cmake\n'}
+[4.433395] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_packageConfig-version.cmake\n'}
+[4.433727] (challenge_package) StdoutLine: {'line': b'-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/package.xml\n'}
+[4.434630] (challenge_package) CommandEnded: {'returncode': 0}
+[4.516485] (-) TimerEvent: {}
+[4.527270] (challenge_package) JobEnded: {'identifier': 'challenge_package', 'rc': 0}
+[4.529144] (-) EventReactorShutdown: {}

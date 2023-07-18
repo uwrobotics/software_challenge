@@ -1,0 +1,17 @@
+{
+  "package_name": "challenge_package",
+  "output_dir": "/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package/rosidl_typesupport_c/challenge_package",
+  "template_dir": "/opt/ros/galactic/share/rosidl_typesupport_c/resource",
+  "idl_tuples": [
+    "/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package/rosidl_adapter/challenge_package:msg/Names.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/galactic/lib/rosidl_typesupport_c/rosidl_typesupport_c",
+    "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_typesupport_c/__init__.py",
+    "/opt/ros/galactic/share/rosidl_typesupport_c/resource/action__type_support.c.em",
+    "/opt/ros/galactic/share/rosidl_typesupport_c/resource/idl__type_support.cpp.em",
+    "/opt/ros/galactic/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
+    "/opt/ros/galactic/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
+    "/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package/rosidl_adapter/challenge_package/msg/Names.idl"
+  ]
+}

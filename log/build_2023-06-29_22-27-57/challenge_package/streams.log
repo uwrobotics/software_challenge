@@ -1,0 +1,25 @@
+[0.016s] Invoking command in '/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package -- -j8 -l8
+[0.072s] [  3%] Built target challenge_package__cpp
+[0.076s] [ 12%] Built target challenge_package__rosidl_generator_c
+[0.108s] [ 21%] Built target challenge_package__rosidl_typesupport_cpp
+[0.109s] [ 30%] Built target challenge_package__rosidl_typesupport_c
+[0.111s] [ 48%] Built target challenge_package__rosidl_typesupport_introspection_cpp
+[0.111s] [ 48%] Built target challenge_package__rosidl_typesupport_introspection_c
+[0.111s] [ 57%] Built target challenge_package__rosidl_typesupport_fastrtps_cpp
+[0.143s] [ 66%] Built target challenge_package__rosidl_typesupport_fastrtps_c
+[0.163s] [ 66%] Built target challenge_package
+[0.182s] [35m[1mScanning dependencies of target clear_turtle_listener[0m
+[0.186s] [ 69%] Built target challenge_package__py
+[0.225s] [ 75%] Built target challenge_package__python
+[0.235s] [ 78%] [32mBuilding CXX object CMakeFiles/clear_turtle_listener.dir/src/clear_turtles.cpp.o[0m
+[0.259s] [ 84%] Built target challenge_package__rosidl_typesupport_c__pyext
+[0.262s] [ 90%] Built target challenge_package__rosidl_typesupport_fastrtps_c__pyext
+[0.271s] [ 96%] Built target challenge_package__rosidl_typesupport_introspection_c__pyext
+[7.130s] [100%] [32m[1mLinking CXX executable clear_turtle_listener[0m
+[7.452s] /usr/bin/ld: CMakeFiles/clear_turtle_listener.dir/src/clear_turtles.cpp.o: in function `rclcpp::Client<turtlesim::srv::Kill>::Client(rclcpp::node_interfaces::NodeBaseInterface*, std::shared_ptr<rclcpp::node_interfaces::NodeGraphInterface>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rcl_client_options_t&)':
+[7.452s] clear_turtles.cpp:(.text._ZN6rclcpp6ClientIN9turtlesim3srv4KillEEC2EPNS_15node_interfaces17NodeBaseInterfaceESt10shared_ptrINS5_18NodeGraphInterfaceEERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEER20rcl_client_options_t[_ZN6rclcpp6ClientIN9turtlesim3srv4KillEEC5EPNS_15node_interfaces17NodeBaseInterfaceESt10shared_ptrINS5_18NodeGraphInterfaceEERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEER20rcl_client_options_t]+0xc4): undefined reference to `rosidl_service_type_support_t const* rosidl_typesupport_cpp::get_service_type_support_handle<turtlesim::srv::Kill>()'
+[7.457s] collect2: error: ld returned 1 exit status
+[7.458s] make[2]: *** [CMakeFiles/clear_turtle_listener.dir/build.make:133: clear_turtle_listener] Error 1
+[7.458s] make[1]: *** [CMakeFiles/Makefile2:124: CMakeFiles/clear_turtle_listener.dir/all] Error 2
+[7.458s] make: *** [Makefile:141: all] Error 2
+[7.460s] Invoked command in '/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package -- -j8 -l8

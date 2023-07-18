@@ -1,0 +1,69 @@
+[0.000000] (-) TimerEvent: {}
+[0.000429] (challenge_package) JobQueued: {'identifier': 'challenge_package', 'dependencies': OrderedDict()}
+[0.000640] (challenge_package) JobStarted: {'identifier': 'challenge_package'}
+[0.011460] (challenge_package) JobProgress: {'identifier': 'challenge_package', 'progress': 'cmake'}
+[0.013161] (challenge_package) JobProgress: {'identifier': 'challenge_package', 'progress': 'build'}
+[0.014148] (challenge_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package', '--', '-j8', '-l8'], 'cwd': '/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'evanw'), ('SSH_AGENT_PID', '1646'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/evanw'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evanw/Desktop/uwrt/challenge_ws/src'), ('TERM_PROGRAM_VERSION', '1.79.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1464'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2011'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'evanw'), ('JOURNAL_STREAM', '8:46267'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'evanw'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/evanw-HP-Spectre-x360-Convertible-13-aw0xxx:@/tmp/.ICE-unix/1685,unix/evanw-HP-Spectre-x360-Convertible-13-aw0xxx:/tmp/.ICE-unix/1685'), ('INVOCATION_ID', '602bf3e1c04d4f0cabaa8da1bb4feb0c'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-e67e526051.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/evanw/Desktop/uwrt/challenge_ws/build/challenge_package'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.073709] (challenge_package) StdoutLine: {'line': b'[ 12%] Built target challenge_package__rosidl_generator_c\n'}
+[0.074097] (challenge_package) StdoutLine: {'line': b'[ 12%] Built target challenge_package__cpp\n'}
+[0.099532] (-) TimerEvent: {}
+[0.103197] (challenge_package) StdoutLine: {'line': b'[ 21%] Built target challenge_package__rosidl_typesupport_c\n'}
+[0.104591] (challenge_package) StdoutLine: {'line': b'[ 30%] Built target challenge_package__rosidl_typesupport_cpp\n'}
+[0.109747] (challenge_package) StdoutLine: {'line': b'[ 39%] Built target challenge_package__rosidl_typesupport_introspection_cpp\n'}
+[0.110327] (challenge_package) StdoutLine: {'line': b'[ 48%] Built target challenge_package__rosidl_typesupport_introspection_c\n'}
+[0.113760] (challenge_package) StdoutLine: {'line': b'[ 57%] Built target challenge_package__rosidl_typesupport_fastrtps_cpp\n'}
+[0.137632] (challenge_package) StdoutLine: {'line': b'[ 66%] Built target challenge_package__rosidl_typesupport_fastrtps_c\n'}
+[0.154982] (challenge_package) StdoutLine: {'line': b'[ 66%] Built target challenge_package\n'}
+[0.164560] (challenge_package) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target clear_turtle_listener\x1b[0m\n'}
+[0.174355] (challenge_package) StdoutLine: {'line': b'[ 69%] Built target challenge_package__py\n'}
+[0.197358] (challenge_package) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/clear_turtle_listener.dir/src/clear_turtles.cpp.o\x1b[0m\n'}
+[0.199619] (-) TimerEvent: {}
+[0.204195] (challenge_package) StdoutLine: {'line': b'[ 78%] Built target challenge_package__python\n'}
+[0.242166] (challenge_package) StdoutLine: {'line': b'[ 84%] Built target challenge_package__rosidl_typesupport_introspection_c__pyext\n'}
+[0.242415] (challenge_package) StdoutLine: {'line': b'[ 90%] Built target challenge_package__rosidl_typesupport_c__pyext\n'}
+[0.249081] (challenge_package) StdoutLine: {'line': b'[ 96%] Built target challenge_package__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.299745] (-) TimerEvent: {}
+[0.400096] (-) TimerEvent: {}
+[0.500439] (-) TimerEvent: {}
+[0.600750] (-) TimerEvent: {}
+[0.701102] (-) TimerEvent: {}
+[0.801399] (-) TimerEvent: {}
+[0.901701] (-) TimerEvent: {}
+[1.002132] (-) TimerEvent: {}
+[1.102441] (-) TimerEvent: {}
+[1.202828] (-) TimerEvent: {}
+[1.303196] (-) TimerEvent: {}
+[1.403525] (-) TimerEvent: {}
+[1.503945] (-) TimerEvent: {}
+[1.604276] (-) TimerEvent: {}
+[1.704601] (-) TimerEvent: {}
+[1.804940] (-) TimerEvent: {}
+[1.905530] (-) TimerEvent: {}
+[1.986321] (challenge_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evanw/Desktop/uwrt/challenge_ws/src/challenge_package/src/clear_turtles.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KKillTurtlesSubscriber::KillTurtlesSubscriber()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.986546] (challenge_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evanw/Desktop/uwrt/challenge_ws/src/challenge_package/src/clear_turtles.cpp:28:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[1.986621] (challenge_package) StderrLine: {'line': b'   28 |       subscription_ = this->\x1b[01;31m\x1b[Kcreate_subscription<challenge_package::msg::Names& msg>\x1b[m\x1b[K(\n'}
+[1.986679] (challenge_package) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.986730] (challenge_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evanw/Desktop/uwrt/challenge_ws/src/challenge_package/src/clear_turtles.cpp:29:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMinimalSubscriber\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.986785] (challenge_package) StderrLine: {'line': b'   29 |       "kill_turtles", 10, std::bind(&\x1b[01;31m\x1b[KMinimalSubscriber\x1b[m\x1b[K::topic_callback, this, _1));\n'}
+[1.986839] (challenge_package) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.005629] (-) TimerEvent: {}
+[2.105985] (-) TimerEvent: {}
+[2.153588] (challenge_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evanw/Desktop/uwrt/challenge_ws/src/challenge_package/src/clear_turtles.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid KillTurtlesSubscriber::topic_callback(const Names&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.153874] (challenge_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evanw/Desktop/uwrt/challenge_ws/src/challenge_package/src/clear_turtles.cpp:38:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 has non-pointer type \xe2\x80\x98\x1b[01m\x1b[Kconst Names\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst challenge_package::msg::Names_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.153946] (challenge_package) StderrLine: {'line': b'   38 |       for (int i = 0; i < msg\x1b[01;31m\x1b[K->\x1b[m\x1b[Knames.size; i++) {\n'}
+[2.154004] (challenge_package) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.154061] (challenge_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evanw/Desktop/uwrt/challenge_ws/src/challenge_package/src/clear_turtles.cpp:39:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 has non-pointer type \xe2\x80\x98\x1b[01m\x1b[Kconst Names\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst challenge_package::msg::Names_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.154115] (challenge_package) StderrLine: {'line': b'   39 |         const std::string name = msg\x1b[01;31m\x1b[K->\x1b[m\x1b[Knames[i];\n'}
+[2.154167] (challenge_package) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.206121] (-) TimerEvent: {}
+[2.306557] (-) TimerEvent: {}
+[2.406955] (-) TimerEvent: {}
+[2.507301] (-) TimerEvent: {}
+[2.607638] (-) TimerEvent: {}
+[2.707989] (-) TimerEvent: {}
+[2.719357] (challenge_package) StderrLine: {'line': b'make[2]: *** [CMakeFiles/clear_turtle_listener.dir/build.make:63: CMakeFiles/clear_turtle_listener.dir/src/clear_turtles.cpp.o] Error 1\n'}
+[2.719648] (challenge_package) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:124: CMakeFiles/clear_turtle_listener.dir/all] Error 2\n'}
+[2.719759] (challenge_package) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[2.721321] (challenge_package) CommandEnded: {'returncode': 2}
+[2.779157] (challenge_package) JobEnded: {'identifier': 'challenge_package', 'rc': 2}
+[2.792199] (-) EventReactorShutdown: {}

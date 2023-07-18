@@ -1,0 +1,117 @@
+[35m[1mScanning dependencies of target circle_turtle_service[0m
+[  2%] Built target challenge_package__cpp
+[ 11%] Built target challenge_package__rosidl_generator_c
+[ 20%] Built target challenge_package__rosidl_typesupport_cpp
+[ 28%] Built target challenge_package__rosidl_typesupport_introspection_cpp
+[ 37%] Built target challenge_package__rosidl_typesupport_fastrtps_cpp
+[ 40%] [32mBuilding CXX object CMakeFiles/circle_turtle_service.dir/src/move_circle.cpp.o[0m
+[ 48%] Built target challenge_package__rosidl_typesupport_c
+[ 57%] Built target challenge_package__rosidl_typesupport_introspection_c
+[ 65%] Built target challenge_package__rosidl_typesupport_fastrtps_c
+[ 65%] Built target challenge_package
+[ 68%] Built target challenge_package__py
+[ 74%] Built target clear_turtle_listener
+[ 80%] Built target challenge_package__python
+[ 85%] Built target challenge_package__rosidl_typesupport_c__pyext
+[ 91%] Built target challenge_package__rosidl_typesupport_fastrtps_c__pyext
+[ 97%] Built target challenge_package__rosidl_typesupport_introspection_c__pyext
+[100%] [32m[1mLinking CXX executable circle_turtle_service[0m
+[100%] Built target circle_turtle_service
+-- Install configuration: ""
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/ament_index/resource_index/rosidl_interfaces/challenge_package
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/rosidl_generator_c__visibility_control.h
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/names.h
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__functions.h
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__struct.h
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__functions.c
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__type_support.h
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/environment/library_path.sh
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/environment/library_path.dsv
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/libchallenge_package__rosidl_generator_c.so
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/libchallenge_package__rosidl_typesupport_fastrtps_c.so
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/dds_fastrtps
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/libchallenge_package__rosidl_typesupport_fastrtps_cpp.so
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__type_support.c
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/libchallenge_package__rosidl_typesupport_introspection_c.so
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/libchallenge_package__rosidl_typesupport_c.so
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/names.hpp
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__struct.hpp
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__builder.hpp
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__traits.hpp
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__type_support.cpp
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/include/challenge_package/msg/detail/names__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/libchallenge_package__rosidl_typesupport_introspection_cpp.so
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/libchallenge_package__rosidl_typesupport_cpp.so
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/environment/pythonpath.sh
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/environment/pythonpath.dsv
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages/challenge_package/__init__.py
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages/challenge_package/msg
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages/challenge_package/msg/__init__.py
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages/challenge_package/msg/_names.py
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages/challenge_package/msg/_names_s.c
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages/challenge_package/challenge_package_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages/challenge_package/challenge_package_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/python3.8/site-packages/challenge_package/challenge_package_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/libchallenge_package__python.so
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/msg/Names.idl
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/msg/Names.msg
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/challenge_package/clear_turtle_listener
+-- Installing: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/challenge_package/circle_turtle_service
+-- Set runtime path of "/home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/lib/challenge_package/circle_turtle_service" to ""
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/ament_index/resource_index/package_run_dependencies/challenge_package
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/ament_index/resource_index/parent_prefix_path/challenge_package
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/environment/ament_prefix_path.sh
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/environment/path.sh
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/environment/path.dsv
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/local_setup.bash
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/local_setup.sh
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/local_setup.zsh
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/local_setup.dsv
+-- Installing: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/package.dsv
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/ament_index/resource_index/packages/challenge_package
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_generator_cExport.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_generator_cExport-noconfig.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_typesupport_introspection_cExport.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_typesupport_cExport.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_typesupport_cExport-noconfig.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_generator_cppExport.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_typesupport_introspection_cppExport.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_typesupport_cppExport.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_package__rosidl_typesupport_cppExport-noconfig.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/rosidl_cmake-extras.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_packageConfig.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/cmake/challenge_packageConfig-version.cmake
+-- Up-to-date: /home/evanw/Desktop/uwrt/challenge_ws/install/challenge_package/share/challenge_package/package.xml

@@ -1,0 +1,8 @@
+[01m[K/home/evanw/Desktop/uwrt/challenge_ws/src/challenge_package/src/clear_turtles.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kchallenge_package/msg/names.hpp: No such file or directory
+    6 | #include [01;31m[K"challenge_package/msg/names.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/clear_turtle_listener.dir/build.make:63: CMakeFiles/clear_turtle_listener.dir/src/clear_turtles.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:123: CMakeFiles/clear_turtle_listener.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2
