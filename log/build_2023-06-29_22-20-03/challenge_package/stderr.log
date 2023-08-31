@@ -1,7 +1,0 @@
-[01m[K/home/evanw/Desktop/uwrt/challenge_ws/src/challenge_package/src/clear_turtles.cpp:[m[K In member function ‘[01m[Kvoid KillTurtlesSubscriber::topic_callback(const Names&) const[m[K’:
-[01m[K/home/evanw/Desktop/uwrt/challenge_ws/src/challenge_package/src/clear_turtles.cpp:39:37:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[Kconst Names[m[K’ {aka ‘[01m[Kconst challenge_package::msg::Names_<std::allocator<void> >[m[K’} and ‘[01m[Kunsigned int[m[K’)
-   39 |         const std::string name = msg[01;31m[K[[m[Ki];
-      |                                     [01;31m[K^[m[K
-make[2]: *** [CMakeFiles/clear_turtle_listener.dir/build.make:63: CMakeFiles/clear_turtle_listener.dir/src/clear_turtles.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:124: CMakeFiles/clear_turtle_listener.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

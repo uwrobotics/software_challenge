@@ -3,13 +3,16 @@
 #include <std_srvs/srv/trigger.hpp> //need to import specific hpp, then specifically refer to it
 #include "turtlesim/srv/spawn.hpp"
 
+using std::placeholders::_1;
+using std::placeholders::_2;
+
 class SpawnTurtleService : public rclcpp::Node
 {
     using trigger_srv = std_srvs::srv::Trigger;
 
     public:
     SpawnTurtleService(): Node("spawn_turtle_node") {
-        spawn_service = create_service<trigger_srv>("spawn_turtles", std::bind(&SpawnTurtleService::handle_spawn_req, this));
+        spawn_service = create_service<trigger_srv>("spawn_turtles", std::bind(&SpawnTurtleService::handle_spawn_req, this, _1, _2));
         turtlesim_client = create_client<turtlesim::srv::Spawn>("/spawn");
     }
 
@@ -41,7 +44,7 @@ class SpawnTurtleService : public rclcpp::Node
             spawn_req->name = turtles[i].name;
             auto res = turtlesim_client->async_send_request(spawn_req);
 
-            RCLCPP_INFO(this->get_logger(), "Killed Turtle: '%s'", spawn_req->name.c_str());
+            RCLCPP_INFO(this->get_logger(), "Spawned Turtle: '%s'", spawn_req->name.c_str());
         }   
 
         response->success = true;

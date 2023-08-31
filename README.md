@@ -20,5 +20,5 @@ Lastly, create a launch file that will start up all the components and the turtl
 
 
 After each package, build with `colcon build`, then run the particular service:
-e.g `ros2 run challenge_package circle_turtle_service`, then call the service with `ros2 service call /move_turtle1_circular std_srvs/srv/Trigger`
+e.g `ros2 run challenge_package <package_name>`, then call the service with `ros2 service call /<service_call_name> std_srvs/srv/Trigger` (only if its a service)
 

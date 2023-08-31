@@ -25,28 +25,48 @@ find_package(rosidl_default_generators REQUIRED)
 
 # need to import msg files like this (from tutorial of https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Single-Package-Define-And-Use-Interface.html)
 set(msg_files "msg/Names.msg")
+set(act_files "action/Move.action")
 
 rosidl_generate_interfaces(${PROJECT_NAME}
     ${msg_files}
+    ${act_files}
 )
 
+include_directories(include)
 ament_export_dependencies(rosidl_default_runtime)
 
 
 add_executable(clear_turtle_listener src/clear_turtles.cpp)
 add_executable(circle_turtle_service src/move_circle.cpp)
+add_executable(spawn_turtle_service src/spawn_turtles.cpp)
+add_executable(reset_turtle_service src/reset_turtle.cpp)
+add_executable(dist_publisher src/publisher_dist.cpp)
+add_executable(move_action_server src/move_action.cpp)
 
 # bc msg folder in the same package, so you need to link them with this
 rosidl_target_interfaces(clear_turtle_listener ${PROJECT_NAME} "rosidl_typesupport_cpp")
+rosidl_target_interfaces(move_action_server ${PROJECT_NAME} "rosidl_typesupport_cpp")
+# check how msg files are imported here and do the same for action files
+
+
 
 # link the dependencies of clear_turtle_listener with relevant libraries that are mentioned in the file itself
 ament_target_dependencies(clear_turtle_listener rclcpp std_msgs turtlesim)
 ament_target_dependencies(circle_turtle_service rclcpp std_srvs geometry_msgs)
+ament_target_dependencies(spawn_turtle_service rclcpp std_srvs turtlesim)
+ament_target_dependencies(reset_turtle_service rclcpp std_srvs turtlesim)
+ament_target_dependencies(dist_publisher rclcpp geometry_msgs turtlesim)
+ament_target_dependencies(move_action_server rclcpp rclcpp_action geometry_msgs turtlesim)
+
 
 
 install(TARGETS
   clear_turtle_listener
   circle_turtle_service
+  spawn_turtle_service
+  reset_turtle_service
+  dist_publisher
+  move_action_server
   DESTINATION lib/${PROJECT_NAME})
 
 
