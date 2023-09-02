@@ -41,11 +41,14 @@ add_executable(circle_turtle_service src/move_circle.cpp)
 add_executable(spawn_turtle_service src/spawn_turtles.cpp)
 add_executable(reset_turtle_service src/reset_turtle.cpp)
 add_executable(dist_publisher src/publisher_dist.cpp)
-add_executable(move_action_server src/move_action.cpp)
+add_executable(move_action_server src/move_action_server.cpp)
+add_executable(move_action_client src/move_action_client.cpp)
 
 # bc msg folder in the same package, so you need to link them with this
 rosidl_target_interfaces(clear_turtle_listener ${PROJECT_NAME} "rosidl_typesupport_cpp")
 rosidl_target_interfaces(move_action_server ${PROJECT_NAME} "rosidl_typesupport_cpp")
+rosidl_target_interfaces(move_action_client ${PROJECT_NAME} "rosidl_typesupport_cpp")
+
 # check how msg files are imported here and do the same for action files
 
 
@@ -57,6 +60,7 @@ ament_target_dependencies(spawn_turtle_service rclcpp std_srvs turtlesim)
 ament_target_dependencies(reset_turtle_service rclcpp std_srvs turtlesim)
 ament_target_dependencies(dist_publisher rclcpp geometry_msgs turtlesim)
 ament_target_dependencies(move_action_server rclcpp rclcpp_action geometry_msgs turtlesim)
+ament_target_dependencies(move_action_client rclcpp rclcpp_action geometry_msgs turtlesim)
 
 
 
@@ -67,6 +71,7 @@ install(TARGETS
   reset_turtle_service
   dist_publisher
   move_action_server
+  move_action_client
   DESTINATION lib/${PROJECT_NAME})
 
 

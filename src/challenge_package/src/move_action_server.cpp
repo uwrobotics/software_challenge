@@ -93,8 +93,12 @@ class MoveActionServer : public rclcpp::Node
 
 
         auto move_msg = twist_msg();
-        move_msg.linear.x = goal_pos.x - curr_pos.x;
-        move_msg.linear.y = goal_pos.y - curr_pos.y;
+        move_msg.linear.x = (goal_pos.x - curr_pos.x)/2;
+        move_msg.linear.y = (goal_pos.y - curr_pos.y)/2;
+        move_msg.linear.z = 0;
+        move_msg.angular.x = 0;
+        move_msg.angular.y = 0;
+        move_msg.angular.z = 0;
 
         vel_pub->publish(move_msg);
 
@@ -109,17 +113,19 @@ class MoveActionServer : public rclcpp::Node
       if (rclcpp::ok()) {
         rclcpp::Time end_time = this->now();
         result_ptr->time_taken = (end_time-start_time).seconds();
-
+        auto move_msg = twist_msg();
+        move_msg.linear.x = 0;
+        move_msg.linear.y = 0;
+        move_msg.linear.z = 0;
+        move_msg.angular.x = 0;
+        move_msg.angular.y = 0;
+        move_msg.angular.z = 0;
+        vel_pub->publish(move_msg);
         goal_handle->succeed(result_ptr);
         RCLCPP_INFO(this->get_logger(), "Goal succeeded");
       }
   }
 };
-// This is going to be a Action service
-// Service will publish geometry messages to cmd_vel
-// Action goal command (how will this be passed in? By calling the action? From a client?)
-// feedback (so it will publish the distance from the goal - dist of waypoint to curr location)
-// result, after action is done, it will send back to the client
 
 int main(int argc, char * argv[])
 {
