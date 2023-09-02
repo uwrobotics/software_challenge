@@ -1,0 +1,9 @@
+# Define the action goal
+float32 x_pos
+float32 y_pos
+---
+# Define the action result
+float32 time_taken
+---
+# Define the action feedback
+float32 distance_to_goal
