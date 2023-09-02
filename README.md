@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 The training challenge consists of the following:
 
 That training relies heavily on components - as this is the newer and better way to go about ROS2 design
@@ -22,3 +23,6 @@ Lastly, create a launch file that will start up all the components and the turtl
 After each package, build with `colcon build`, then run the particular service:
 e.g `ros2 run challenge_package <package_name>`, then call the service with `ros2 service call /<service_call_name> std_srvs/srv/Trigger` (only if its a service)
 
+=======
+# software_challenge
+>>>>>>> upstream/master
